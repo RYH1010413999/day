@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	   #d1{
+	   	width: 300px;
+	   	height: 300px;
+	   	background-color: black;
+	   }
+	    .d2{
+	   	width: 300px;
+	   	height: 300px;
+	   	background-color: black;
+	   }
+	   </style>
+</head>
+<body>
+     <div id="d1"></div>
+     <div class="d2"></div>
+     <span></span>
+	  <script>
+	var a=myfun("#",'d1');
+    var b=myfun(".",'d2');
+    var c=myfun( "",'span');
+    function myfun(my,id){
+   	 if (my.indexOf('#')==0) {
+   		return document.getElementById(id);
+   		 
+      }
+      else if (my.indexOf('.')==0){
+      	return document.getElementsByClassName(id);
+      	  
+      }
+     else{
+       return  document.getElementsByTagName(id); 
+        
+      }
+  }
+     b[0].style.backgroundColor = 'red';
+      
+
+	  </script>
+</body>
+</html>

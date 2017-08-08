@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	  <script>
+	  	
+
+function myfun(x,y,z) {
+	     var num=0;
+	switch(z){
+         case "+":
+         	num=x+y;
+         	break;
+         
+	     case "-":
+         	num=x-y;
+         	break;
+         
+         case "*":
+         	num=x*y;
+         	break;
+         
+         case "/":
+         	num=x/y;
+         	break;
+
+	  }	
+	   document.write('<br>'+num);
+
+}
+
+	  myfun(1,2,'-');
+	  myfun(1,2,"+");
+	  myfun(1,2,"*");
+	  myfun(1,2,"/");
+	   </script>
+</body>
+</html>
